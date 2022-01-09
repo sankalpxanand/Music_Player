@@ -1,0 +1,322 @@
+html{
+    background-color: #06153f;
+    color:white;
+ }
+ body {
+     margin: 0px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 20px;
+     color:white;
+ }
+ 
+ body::-webkit-scrollbar { 
+     display: none; 
+ }
+ * {
+   box-sizing: border-box;
+ }
+ 
+ /*navigaton bar*/
+ .bars{
+     color: white;
+     margin: 0;
+     margin-right: 5%;
+     display: none;
+ }
+ 
+ .bars i {
+     font-size: 2rem;
+ }
+ /*Dropdown list on the navigation bar when width drops to 600px*/
+ .dropdown-list{
+     margin: 0;
+     display: none;
+     background-color: #828470;
+     box-shadow: 0px 4px 8px 1px #535547;
+ }
+ 
+ .dropdown-list ul{
+     margin: 0.2rem 0.2rem;
+     text-align: left;
+     padding: 0px 0.8rem;
+ }
+ 
+ .dropdown-menu:hover .dropdown-list{
+     display: block;
+     position: absolute;
+     right: 3%;
+ }
+ 
+ .dropdown-list li{
+     margin: 0.4rem 0px;
+ }
+ 
+ .no-list-style{
+     list-style: none;
+ }
+ /*styling the list and  anchor tag*/
+ .no-list-style li {
+     font-weight: 100;
+     font-size: 0.9rem;
+ }
+ 
+ .no-list-style li a{
+     list-style: none;
+     color: white;
+     text-decoration: none;
+ }
+ 
+ .horizontal-list {
+     padding-left: 0px;
+     margin: 0px;
+ }
+ 
+ .horizontal-list li {
+     display: inline-block;
+     margin: 0px 8px 8px 0px;
+ }
+ 
+ 
+ .nav-menu li a {
+     transition: color 0.5s, border-bottom 4s;
+ }
+ 
+ .nav-menu li a:hover {
+     color: lightgrey;
+     border-bottom: 1px solid black;
+ }
+ .text-right{
+     text-align: right;
+ }
+ /*logo properties*/
+ #logo img{
+     width:8vw;
+     height:13vh;
+     border-radius: 50%;
+     margin-left:0%;
+ }
+ #logo-name{
+     vertical-align: top;
+     margin-top:1.5%;
+ }
+ #logo-name span{
+     display: block;
+ }
+ #favourites{
+     vertical-align: top;
+     margin-top:2%;
+     font-weight: 400;
+     font-size:1.2rem;
+     margin-left: 2%;
+ }
+ #search{
+     vertical-align: top;
+     margin-top:2%;
+     margin-left:35%;
+ 
+ }
+ #search input{
+     background-color: black;
+     color:white;
+     border:none;
+     border-radius:5%;
+ }
+ #bell{
+     vertical-align: top;
+     margin-top:2%;
+     
+ }
+ /*profile properties*/
+ #profile{
+      margin-left:5%;
+ }
+ #profile img{
+      width:8vw;
+     height:13vh;
+     border-radius: 50%;
+ 
+ }
+ /*Responsive design for navigation bar*/
+ @media only screen and (max-width:900px){
+   #search{
+     margin-left: 30%;
+   }
+ }
+ 
+ @media only screen and (max-width:830px){
+   #search{
+     margin-left: 15%;
+   }
+   #profile{
+     margin-left:3%; 
+   }
+ }
+ @media only screen and (max-width: 572px) {
+     
+     .timeline-box {
+         width: 100%;
+         left: 10% !important;
+     }
+ 
+     .bars {
+         display: block;
+     }
+     
+     
+     .nav-menu {
+         display: none;
+     } 
+ }
+ /*Main content*/
+ .image {
+   float: left;
+   background-color: #f1f1f1;
+   width: 30%;
+   height: 300px;
+ }
+ .image img{
+     height:280px;
+     width:100%;
+ }
+ .image-content {
+   float: left;
+   padding: 0px 12px;
+   width: 70%;
+   border-left: none;
+   height: 300px;
+ }
+ /*Main section*/
+ main{
+    width:70%;
+    display: inline-block;
+    margin:5% 0 0 5%;
+ }
+ /*Aside section*/
+ aside{
+    width:20%;
+    display:inline-block;
+    vertical-align: top;
+    margin-left:3%;
+    margin-top:60px;
+    font-size: 1.2rem;
+ }
+ /*Styling the Playlist in the main section*/
+ .play-list img{
+    position: relative;
+    width:10%;
+    height:100;
+     float: left;
+ 
+ }
+ .play-list-card div{
+     width:10%;
+ }
+ .play-list-card div:nth-child(3){
+     margin-left:57%;
+     font-size: 1rem;
+ }
+ .play-list-card div i{
+     margin-right:20%; 
+ }
+ /*Aside section list*/ 
+ .queue-list{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+ }
+ .queue-list img{
+    position: relative;
+    width:20%;
+    height:100;
+     float: left;
+     margin-right:1.5%; 
+ }
+ .queue-list-card div{
+     width:10%;
+ }
+ 
+ .queue-list-card div:nth-child(3){
+     margin-left:57%;
+     font-size: 1rem;
+ }
+ .queue-list-card div i{
+     margin-right:20%; 
+ }
+ /*Main Playlist*/
+ .play-list-column {
+   float: left;
+   width: 100%;
+   padding: 0 10px;
+   margin-top:3%;
+ 
+ }
+ 
+ /* Remove extra left and right margins, due to padding in columns */
+ .play-list-row {margin: 0 -5px;}
+ 
+ /* Clear floats after the columns */
+ .play-list-row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+ 
+ /* Style the counter cards */
+ .play-list-card {
+   box-shadow: 0 4px 8px 0 rgba(136, 126, 126, 0.4); /* this adds the "card" effect */
+   padding: 16px;
+   text-align: center;
+   background-color: #05174f;
+    display: flex;
+   flex-direction:row;
+   align-items: center;
+ }
+ .play-list-card:hover{
+     transform: scale(1.1);
+ }
+ /*Aside section*/
+ .queue-list-column {
+   float: left;
+   width: 100%;
+   padding: 0 10px;
+ 
+ }
+ 
+ /* Remove extra left and right margins, due to padding in columns */
+ .queue-list-row {margin: 0 -5px;}
+ 
+ /* Clear floats after the columns */
+ .queue-list-row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+ 
+ /* Style the counter cards */
+ .queue-list-card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+   padding: 16px;
+   text-align: center;
+   background-color: #06153f;
+    display: flex;
+   flex-direction:row;
+   align-items: center;
+ }
+ /*Responsive design for aside section*/
+ @media screen and (max-width: 600px){
+     aside{
+         display: none;
+     }
+ }
+ /*Responsive design for Main Section*/
+ @media screen and (max-width:600px){
+     main{
+         width:90%;
+          font-size: 1rem;
+     }
+     .main-content{
+         height:350px;
+ 
+     }
+     
+ }

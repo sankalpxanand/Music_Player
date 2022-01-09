@@ -1,0 +1,120 @@
+html{
+    background-color: #06153f;
+    color:white;
+ }
+ body {
+     margin: 0px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 20px;
+     color:white;
+ }
+ 
+ body::-webkit-scrollbar { 
+     display: none; 
+ }
+ * {
+   box-sizing: border-box;
+ }
+ .title{
+    font-weight:bold;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    display: block;
+    margin:20px 0 5px 0;
+ }
+ .column1 {
+   float: left;
+   width: 50%;
+   padding: 0 10px;
+ 
+ }
+ 
+ /* Remove extra left and right margins, due to padding in columns */
+ .row1 {margin: 0 -5px;}
+ 
+ /* Clear floats after the columns */
+ .row1:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+ 
+ /* Style the counter cards */
+ .card1 {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+   padding: 16px;
+   text-align: center;
+   background-color: #06153f;
+    display: flex;
+   flex-direction:row;
+   align-items: center;
+ }
+ .latest-release{
+    display: flex;
+    flex-direction: column;
+ }
+ .latest-release img{
+    position: relative;
+    width:40%;
+    height:100;
+     float: left;
+ }
+ .latest-release img:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+ }
+ .card1 div{
+   width:15%;
+ }
+ .no-list-style li {
+     font-weight: 100;
+     font-size: 0.9rem;
+     text-decoration: none;
+     list-style: none;
+ }
+ 
+ .no-list-style li a{
+     list-style: none;
+     color: black;
+     text-decoration: none;
+ }
+ .card1 div:nth-child(3){
+   width:40%;
+   margin-left:20%;
+   margin-top:-30%;
+ }
+ 
+ #lightbox{
+   height:0;
+   width:0;
+   overflow:hidden;
+   display: block;
+ }
+ #lightbox:target{
+   height:80%;
+   width:50%;
+   position: relative;
+   background-color: lightgrey;
+ }
+ #player{
+   display:none;
+ }
+ #player:target{
+   display: block;
+ }
+ #player audio{
+   color:blue;
+   width: 100%;
+   display: fixed;
+   vertical-align:bottom;
+ }
+ 
+ /* Responsive columns - one column layout (vertical) on small screens */
+ @media screen and (max-width: 600px) {
+   .latest-release-column {
+     width: 100%;
+     display: block;
+     margin-bottom: 20px;
+   }
+}

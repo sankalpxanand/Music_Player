@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music Player</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+  <link rel="shortcut icon" typr="image/x-icon" href="media/favi.jpg">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+  <!--Top Navigation Bar-->
+   <header id="body-header">
+    <!--Side HamBurger icon when max width drops below 600px-->
+        <nav>
+            
+            <div class = "dropdown-menu text-right">
+                <div class="bars">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class ="dropdown-list nav-menu">
+                    <ul class = "no-list-style">
+                        <li >
+                            <a href="#">Ninjas Studio</a>
+                        </li>
+                        <li>
+                            <a href="#">Favourites</a>
+                        </li>
+                        <li>
+                            <a href="#latest-english">Latest English</a>
+                        </li>
+                        <li>
+                           <a href="#latest-hindi">Latest Hindi</a>
+                        </li>
+                        <li>
+                           <a href="#popular-artist">Popular Artist</a>
+                        </li>
+                    </ul>
+                    </div>
+
+             </div>   
+<!--Display when screen size is full-->
+            <ul class="no-list-style horizontal-list nav-menu">
+                        <li id="logo">
+                             <img src="media/logo.jpg">
+                        </li>
+                        <li id="logo-name">
+                            <span>Ninjas</span>
+                            <span>Studios</span>
+                        </li>
+                        <li id="favourites">
+                            <span>Favourites</span>
+                        </li>
+                        <li id="search">
+                            <form>
+                                  <input type="text" placeholder="Search">
+                           </form>
+                        </li>
+                        <li id="bell">
+                            <i class="fas fa-bell"></i>
+                        </li>
+                        <li id="profile">
+                           <img src="media/id.jpg" alt="id">
+                        </li>
+            </ul>
+
+        </nav>
+    </header>
+<!--Main section of the page-->
+<main>
+  <!--Home Screen Carosule-->
+<section id="slider">
+  <input type="radio" name="slider" id="s1" checked>
+  <input type="radio" name="slider" id="s2">
+  <input type="radio" name="slider" id="s3">
+
+  <label for="s1" id="slide1"></label>
+  <label for="s2" id="slide2"></label>
+  <label for="s3" id="slide3"></label>
+</section>
+<!--Latest Release Section-->
+<section id="latest-release">
+<div class="latest-release">
+  <div class="title">Latest Release</div>
+    <div class="row">
+  <div class="latest-release-column">
+    <div class="latest-release-card">
+      <img src="media/onism.jpg" alt="onism">
+      <div>Onism<br>
+      Aug</div>
+      <div class="play-pause">
+      <button class="dropbtn"><i class="fas fa-angle-down"></i></button>
+        <div class="play-pause-content">
+              <a href="#player">Play</a>
+              <a href="#latest-release">Stop</a>
+       </div>
+    </div>
+    </div>
+  </div>
+  <div class="latest-release-column">
+    <div class="latest-release-card">
+      <img src="media/onism.jpg" alt="onism">
+      <div>Onism<br>
+      Aug</div>
+      <div class="play-pause">
+      <button class="dropbtn"><i class="fas fa-angle-down"></i></button>
+        <div class="play-pause-content">
+              <a href="#player">Play</a>
+              <a href="#latest-release">Stop</a>
+       </div>
+    </div> 
+    </div>
+    </div>
+  </div>
+</div>
+<div id="player">
+  <audio controls>
+      <source src="media/song.mp3" type="audio/mp3">
+  </audio>
+</div> 
+</div>
+</section>
+<!--Popular Artist-->
+<section id="popular-artist">
+<div class="artist">
+  <span class="title">Popular Artist</span>
+  <div class="popular-artists">
+  <div class="popular-artists-div1">
+  <figure>
+    <a href="coldplay.html"><img src="media/Ed_sheeran.jpg" alt="Ed-Sheeran"></a>
+    <figcaption>Ed Sheeran</figcaption>
+  </figure>
+</div>
+<div class="popular-artists-div2">
+  <figure>
+    <a href="coldplay.html"><img src="media/coldplay.jpg" alt="ColdPlay"></a>
+    <figcaption>ColdPlay</figcaption>
+  </figure>
+</div>
+<div class="popular-artists-div3">
+  <figure>
+    <a href="coldplay.html"><img src="media/charleputh.jpg" alt="Charlie-Puth"></a>
+    <figcaption>Charlie Puth</figcaption>
+  </figure>
+</div>
+  <div class="popular-artists-div4">
+  <figure>
+    <a href="coldplay.html"><img src="media/BrunoMars.jpg" alt="Bruno-Mars"></a>
+    <figcaption>Bruno Mars</figcaption>
+  </figure>
+</div>
+<div class="popular-artists-div5">
+  <figure>
+    <a href="coldplay.html"><img src="media/imagineDragons.jpg" alt="Imagine-Dragons"></a>
+    <figcaption>Imagine Dragons</figcaption>
+  </figure>
+  </div>
+</div>
+</div>
+</section>
+<!--Different types of music section-->
+<section id="music-types">
+<div class="music-type">
+  <div class="music-type-div1">
+  <figure>
+    <a href="#"><img src="media/pop.jpg" alt="pop"></a>
+  </figure>
+</div>
+<div class="music-type-div2">
+  <figure>
+    <a href="#"><img src="media/retro.jpg" alt="retro"></a>
+  </figure>
+</div>
+<div class="music-type-div3">
+  <figure>
+    <a href="#"><img src="media/love.jpg" alt="love"></a>
+  </figure>
+</div>
+<div class="music-type-div4">
+  <figure>
+    <a href="#"><img src="media/chill.jpg" alt="chill"></a>
+  </figure>
+</div>
+<div class="music-type-div5">
+  <figure>
+    <a href="#"><img src="media/workout.jpg" alt="workout"></a>
+  </figure>
+</div>
+<div class="music-type-div6">
+  <figure>
+    <a href="#"><img src="media/rock.jpg" alt="rock"></a>
+  </figure>
+</div>
+</div>
+</section>
+<!--Classification of music -->
+<sectiion id="classification-music">
+<div class="classification">
+  <div id="classification-div1">
+    <a href="#"><img src="media/party.jpg" alt="rock"></a>
+</div>
+  <div id="classification-div2">
+    <a href="#"><img src="media/electronic.jpg" alt="rock"></a>
+</div>
+<div id="classification-div3">
+    <a href="#"><img src="media/roadtrip.jpg" alt="rock"></a>
+</div>
+</div>
+</sectiion>
+<!--latest English Section-->
+<section id="latest-english">
+<div class="latest-english">
+  <div class="title">Latest English</div>
+   <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="media/skin.jpg" alt="skin">
+      <p>Onism</p>
+      <p>Aug 11,2017</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="media/worryboutus.jpg" alt="worryboutus">
+      <p>Onism</p>
+      <p>Aug 11,2017</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="media/mirage.jpg" alt="mirage">
+      <p>Onism</p>
+      <p>Aug 11,2017</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="media/skin.jpg" alt="skin">
+      <p>Onism</p>
+      <p>Aug 11,2017</p>
+    </div>
+  </div>
+</div> 
+  </div>
+</section>
+  <!--Latest Hindi Section-->
+  <section id="latest-hindi">
+  <div class="latest-hindi">
+    <div class="title">Latest Hindi</div>
+     <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="media/mirage.jpg" alt="mirage">
+      <p>Onism</p>
+      <p>Aug 11,2017</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="media/skin.jpg" alt="skin">
+      <p>Onism</p>
+      <p>Aug 11,2017</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="media/worryboutus.jpg" alt="worryboutus">
+      <p>Onism</p>
+      <p>Aug 11,2017</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="media/mirage.jpg" alt="mirage">
+      <p>Onism</p>
+      <p>Aug 11,2017</p>
+    </div>
+  </div>
+</div> 
+  </div>
+</section>
+</main>
+<!--Aside Section-->
+<aside >
+  <!--Aside Heading-->
+  <div id="aside-heading">
+    <p>Queue</p>
+  </div>
+  <!--dropdown button-->
+   <div class="play-pause aside-dropdown">
+      <button class="dropbtn aside-dropdownbtn">Options</button>
+        <div class="play-pause-content">
+              <a href="#">Play</a>
+              <a href="#">Pause</a>
+       </div>
+<!--Queue Playlist-->
+  <div class="queue-list">
+    <div class="row">
+  <div class="queue-list-column">
+    <div class="queue-list-card">
+      <img src="media/mirage.jpg" alt="mirage">
+      <div>Mirage</div>
+      <div><i class="far fa-heart"></i></div>
+    </div>
+  </div>
+  <div class="queue-list-column">
+    <div class="queue-list-card">
+      <img src="media/worryboutus.jpg" alt="worryboutus">
+      <div>Bewafa</div>
+      <div><i class="far fa-heart"></i></div>
+    </div>
+  </div>
+  <div class="queue-list-column">
+    <div class="queue-list-card">
+      <img src="media/skin.jpg" alt="skin">
+      <div>Sauda</div>
+      <div><i class="far fa-heart"></i></div>
+    </div>
+  </div>
+  <div class="queue-list-column">
+    <div class="queue-list-card">
+      <img src="media/onism.jpg" alt="onism">
+      <div>Aashiqui</div>
+      <div><i class="far fa-heart"></i></div>
+    </div>
+  </div>
+</div>
+</div>
+  </aside>
+</body>
+</html>

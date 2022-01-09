@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music Player</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style_coldplay.css"> 
+  <link rel="shortcut icon" typr="image/x-icon" href="media/favi.jpg">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+	<!--Header section-->
+	<header id="body-header">
+        <nav>
+            <!--Navigation menu-->
+            <div class = "dropdown-menu text-right">
+                <div class="bars">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class ="dropdown-list nav-menu">
+                    <ul class = "no-list-style">
+                        <li >
+                            <a href="#">Ninjas Studio</a>
+                        </li>
+                        <li>
+                            <a href="#">Favourites</a>
+                        </li>
+                        <li>
+                            <a href="#">Latest English</a>
+                        </li>
+                        <li>
+                           <a href="#">Latest Hindi</a>
+                        </li>
+                        <li>
+                          <a href="#">Queue</a>
+                        </li>
+                        <li>
+                           <a href="#">Popular Artist</a>
+                        </li>
+                    </ul>
+                    </div>
+
+             </div>   
+             <!--Navigation bar when width >600px-->
+            <ul class="no-list-style horizontal-list nav-menu">
+                        <li id="logo">
+                             <img src="media/logo.jpg">
+                        </li>
+                        <li id="logo-name">
+                            <span>Ninjas</span>
+                            <span>Studios</span>
+                        </li>
+                        <li id="favourites">
+                            <span>Favourites</span>
+                        </li>
+                        <li id="search">
+                            <form>
+                                  <input type="text" placeholder="Search">
+                           </form>
+                        </li>
+                        <li id="bell">
+                            <i class="fas fa-bell"></i>
+                        </li>
+                        <li id="profile">
+                           <img src="media/id.jpg" alt="id">
+                        </li>
+            </ul>
+
+        </nav>
+    </header>
+ <!--Main section-->
+    <main>
+    	<!--Main content of the page--> 
+    	<div class="main-content">
+    	<div class="image">
+    		<img src="media/coldplay.jpg">
+    	</div>
+    	<div class="image-content">
+    		<h3>ColdPlay</h3>
+    		<h5>British Band</h5>
+    		<p>Coldplay is a British music band that has enjoyed continuous success since their inception in 1996
+    		through their intelligent and soulful songs. The band members are Chris Martin(lead vocals), Jonny Buckland(lead guitar), Guy Berryman(bass guitar) and Will Champion(drums).</p> 
+    	</div>
+    </div>
+  <!--Playlist in the main section-->
+    <div class="play-list">
+    <div class="play-list-row">
+  	<div class="play-list-column">
+    <div class="play-list-card">
+      <img src="media/shreya.jpg">
+      <div>Teri Meri</div>
+      <div><i class="far fa-heart"></i>
+      		<i class="fas fa-angle-down"></i></div>
+    </div>
+  	</div>
+  	<div class="play-list-column">
+    <div class="play-list-card">
+      <img src="media/darshan.jpg">
+      <div>Pehli Mohabbat</div>
+      <div><i class="far fa-heart"></i>
+      		<i class="fas fa-angle-down"></i></div>
+    </div>
+  	</div>
+  	<div class="play-list-column">
+    <div class="play-list-card">
+      <img src="media/atif.jpg">
+      <div>Jeena Jeena</div>
+      <div><i class="far fa-heart"></i>
+      		<i class="fas fa-angle-down"></i></div>
+    </div>
+  	</div>
+  	<div class="play-list-column">
+    <div class="play-list-card">
+      <img src="media/arijit-singh.jpg">
+	  <div>Aashiqi</div>
+      <div><i class="far fa-heart"></i>
+      		<i class="fas fa-angle-down"></i></div>
+    </div>
+  	</div>
+	</div>
+</div>
+    </main>
+    <!--Aside section-->
+    <aside>
+   <!--Similar artist section-->
+    	<div id="similar-artists">
+    		<p>Similar Artists</p>
+    	</div>
+
+ <div class="queue-list">
+    <div class="queue-list-row">
+  	<div class="queue-list-column">
+    <div class="queue-list-card">
+      <img src="media/shreya.jpg">
+      <div>Shreya Ghosal</div>
+      <div><i class="far fa-heart"></i></div>
+    </div>
+  	</div>
+  	<div class="queue-list-column">
+    <div class="queue-list-card">
+      <img src="media/darshan.jpg">
+      <div>Darshan Raval</div>
+      <div><i class="far fa-heart"></i></div>
+    </div>
+  	</div>
+  	<div class="queue-list-column">
+    <div class="queue-list-card">
+      <img src="media/atif.jpg">
+      <div>Atif Aslam</div>
+      <div><i class="far fa-heart"></i></div>
+    </div>
+  	</div>
+  	<div class="queue-list-column">
+    <div class="queue-list-card">
+      <img src="media/arijit-singh.jpg">
+      <div>Arijit Singh</div>
+      <div><i class="far fa-heart"></i></div>
+    </div>
+  	</div>
+	</div>
+</div>
+<!--Recently played section-->
+<div id="recently-played">
+	<p>Recently Played</p>
+</div>
+ <div class="queue-list">
+    <div class="queue-list-row">
+  	<div class="queue-list-column">
+    <div class="queue-list-card">
+      <img src="media/darshan.jpg">
+      <div>Hawa Banke</div>
+      <div><i class="far fa-heart"></i></div>
+    </div>
+  	</div>
+  	<div class="queue-list-column">
+    <div class="queue-list-card">
+      <img src="media/arijit-singh.jpg">
+      <div>Kabira</div>
+      <div><i class="far fa-heart"></i></div>
+    </div>
+  	</div>
+  	<div class="queue-list-column">
+    <div class="queue-list-card">
+      <img src="media/shreya.jpg">
+      <div>Teri Meri</div>
+      <div><i class="far fa-heart"></i></div>
+    </div>
+  	</div>
+  	<div class="queue-list-column">
+    <div class="queue-list-card">
+      <img src="media/atif.jpg">
+      <div>Tu Jaane Na</div>
+      <div><i class="far fa-heart"></i></div>
+    </div>
+  	</div>
+	</div>
+</div>
+
+    </aside>
+</body>
+</html>
